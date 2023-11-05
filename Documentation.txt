@@ -1,0 +1,61 @@
+// Folder Structure
+
+Angular-Fullstack-Project
+│
+├── node_modules
+│
+├── src
+│   │
+│   ├── app
+│   │   │
+│   │   ├── core
+│   │   |   ├── auth
+│   │   │   │   ├── guard
+│   │   │   │   ├── service
+│   │   │   │
+│   │   |   ├── authentication
+│   │   │   │   ├── login
+│   │   │   │   ├── register
+│   │   |   ├── interceptors
+│   │   |
+│   │   ├── features
+│   │   |   ├── modules
+│   │   │   │   ├── user
+│   │   │   │       ├── user-edit
+│   │   │   │       ├── user-list
+│   │   │   │       ├── user-profile
+│   │   │   │       ├── service
+│   │   │   │ 
+│   │   |   ├── routingConfigurations
+│   │   |   ├── services
+│   │   |   ├── sharedComponents
+│   │   |
+│   │   ├── sharedFeatures
+│   │       ├── components
+│   │       ├── directivesAndPipes
+│   │       ├── modules
+│   │           ├── layout
+│   │               ├── dashboard
+│   │               ├── footer
+│   │               ├── header
+│   │               ├── main
+│   │   
+│   │
+│   ├── assets
+│   │
+│   ├── environments
+│   │   │
+│   │   ├── environment.prod.ts
+│   │   ├── environment.ts
+│   │
+│   ├── index.html
+│   ├── main.ts
+│   ├── styles.css
+│
+├── .editorconfig
+├── .gitignore
+├── angular.json
+├── package.json
+├── tsconfig.json
+├── README.md
+
