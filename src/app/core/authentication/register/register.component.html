@@ -1,1 +1,52 @@
-<p>register works!</p>
+<form class="registration-form">
+    <table class="form-table" cellspacing="0">
+        <tr>
+            <td><mat-form-field class="form-field">
+                    <mat-label>First Name</mat-label>
+                    <input matInput placeholder="Enter your first name" [formControl]="firstNameControl">
+                    <mat-error *ngIf="firstNameControl.invalid">{{getFirstNameErrorMessage()}}</mat-error>
+                </mat-form-field></td>
+            <td><mat-form-field class="form-field">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput placeholder="Enter your last name" [formControl]="lastNameControl">
+                    <mat-error *ngIf="lastNameControl.invalid">{{getLastNameErrorMessage()}}</mat-error>
+                </mat-form-field></td>
+        </tr>
+    </table>
+
+    <table class="form-table" cellspacing="0">
+        <tr>
+            <td><mat-form-field class="form-field">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Enter your email" [formControl]="emailControl">
+                    <mat-error *ngIf="emailControl.invalid">{{getEmailErrorMessage()}}</mat-error>
+                </mat-form-field></td>
+            <td><mat-form-field class="form-field">
+                    <mat-label>Phone</mat-label>
+                    <input matInput placeholder="Enter your phone number" [formControl]="phoneControl">
+                    <mat-error *ngIf="phoneControl.invalid">{{getPhoneErrorMessage()}}</mat-error>
+                </mat-form-field></td>
+        </tr>
+    </table>
+
+    <table class="form-table" cellspacing="0">
+        <tr>
+            <td><mat-form-field class="form-field">
+                    <mat-label>City</mat-label>
+                    <input matInput placeholder="Enter your city" [formControl]="cityControl">
+                </mat-form-field></td>
+            <td><mat-form-field class="form-field">
+                    <mat-label>State</mat-label>
+                    <input matInput placeholder="Enter your state" [formControl]="stateControl">
+                </mat-form-field></td>
+        </tr>
+    </table>
+
+    <mat-form-field class="form-field">
+        <mat-label>Password</mat-label>
+        <input matInput [formControl]="passwordControl" type="password">
+        <mat-error *ngIf="passwordControl.invalid">{{getPasswordErrorMessage()}}</mat-error>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="submit()" [disabled]="registrationForm.invalid">Signup</button>
+</form>

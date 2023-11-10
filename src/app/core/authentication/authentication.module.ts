@@ -4,11 +4,12 @@ import { LoginComponent } from './login/login.component';
 import { MaterialModule } from 'src/shared/material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
     declarations: [
         LoginComponent,
-        // other components, directives, or pipes
+        RegisterComponent
     ],
     imports: [
         MaterialModule,
