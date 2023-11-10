@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -20,7 +20,6 @@ import { AuthenticationModule } from './core/authentication/authentication.modul
     ReactiveFormsModule,
     AuthenticationModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
