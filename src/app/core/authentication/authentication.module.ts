@@ -6,12 +6,12 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
-        LoginComponent,
+        // LoginComponent,
         // other components, directives, or pipes
     ],
     imports: [
         MaterialModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
     ],
 })
 export class AuthenticationModule { }

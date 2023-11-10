@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'src/shared/material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthenticationModule } from './core/authentication/authentication.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,7 @@ import { AuthenticationModule } from './core/authentication/authentication.modul
     MaterialModule,
     FormsModule,
     ReactiveFormsModule,
-    AuthenticationModule
+    AuthenticationModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
