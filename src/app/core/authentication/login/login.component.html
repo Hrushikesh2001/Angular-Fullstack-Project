@@ -1,27 +1,21 @@
-<mat-card>
-    <mat-card-title>Login</mat-card-title>
-    <mat-card-content>
-        <form [formGroup]="form" (ngSubmit)="submit()">
-            <p>
-                <mat-form-field>
-                    <input type="text" matInput placeholder="Username" formControlName="username">
-                </mat-form-field>
-            </p>
+<div class="login-form-container">
 
-            <p>
-                <mat-form-field>
-                    <input type="password" matInput placeholder="Password" formControlName="password">
-                </mat-form-field>
-            </p>
+    <form [formGroup]="loginForm" class="login-form" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline" class="form-field">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" name="email" type="email">
+            <mat-error *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">Invalid
+                Email</mat-error>
+        </mat-form-field>
 
-            <p *ngIf="error" class="error">
-                {{ error }}
-            </p>
+        <mat-form-field appearance="outline" class="form-field">
+            <mat-label>Password</mat-label>
+            <input matInput formControlName="password" name="password" type="password">
+            <mat-error *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">Password must be
+                a
+                combination of lower-case, upper-case, numbers, and at least 9 characters long</mat-error>
+        </mat-form-field>
 
-            <div class="button">
-                <button type="submit" mat-button>Login</button>
-            </div>
-
-        </form>
-    </mat-card-content>
-</mat-card>
+        <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid">Login</button>
+    </form>
+</div>

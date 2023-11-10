@@ -2,7 +2,8 @@
 import { NgModule } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { MaterialModule } from 'src/shared/material/material.module';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
     declarations: [
@@ -11,7 +12,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     ],
     imports: [
         MaterialModule,
-        ReactiveFormsModule
+        FormsModule,
+        ReactiveFormsModule,
+        CommonModule
     ],
 })
 export class AuthenticationModule { }
