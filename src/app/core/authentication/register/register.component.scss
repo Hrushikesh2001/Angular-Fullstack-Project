@@ -1,0 +1,62 @@
+.registration-form {
+    max-width: 45%;
+    margin: auto;
+    padding: 40px;
+    margin-top: 90px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-table {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.form-field {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.mat-form-field {
+    width: 100%;
+}
+
+.mat-error {
+    font-size: 12px;
+    color: #d9534f;
+    /* Bootstrap's danger color */
+}
+
+button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #337ab7;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #286090;
+}
+
+/* Add more styles as needed */
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .registration-form {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .registration-form {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
